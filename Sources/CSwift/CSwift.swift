@@ -1,7 +1,7 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
+import Testing
+import XCTest
 
-import CB
+@testable import HelloTest
 
 @Test func testSee() async throws {
     #expect("Hello" == helloTest())

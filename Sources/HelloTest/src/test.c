@@ -2,7 +2,5 @@
 #include "helloTest.h"
 
 char *helloTest(void) {
-  test();
-
-  return "Hello";
+  return concat(concat("Hello", " "), test());
 }
