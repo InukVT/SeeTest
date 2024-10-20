@@ -1,6 +1,8 @@
 import Testing
-@testable import CSwift
+import XCTest
 
-@Test func example() async throws {
-    // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+@testable import HelloTest
+
+@Test func testSee() async throws {
+    #expect("Hello World" == String(cString: helloTest()))
 }
